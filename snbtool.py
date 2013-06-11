@@ -1,3 +1,7 @@
+# Copyright Igor Koshkarov, 2013
+# Licensed under GPLv3
+# Feel free to use, change and distribute
+
 #!/usr/bin/env python
 from zipfile import ZipFile
 import xml.etree.ElementTree as ET
