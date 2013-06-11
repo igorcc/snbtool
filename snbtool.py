@@ -8,7 +8,7 @@ class snbfile:
     def __init__(self, filename):
         self.__unzip(filename)
 
-    # unzips given file, reads snote.xml and passet it to __strip_text_from_contents
+    # unzips given file, reads snote.xml and passes it to the function  __strip_text_from_contents
     def __unzip(self, file):
         z = ZipFile(file, 'r')
         contents = z.read("snote/snote.xml")
@@ -22,7 +22,7 @@ class snbfile:
         for el in tree.iter():
            self.__analyze_element(el)
 
-    # prints text only
+    # outputs text only
     def __analyze_element(self, el):
         if el.text != None:
             print el.text
